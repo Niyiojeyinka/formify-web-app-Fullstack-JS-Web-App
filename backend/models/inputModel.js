@@ -5,7 +5,7 @@ const inputSchema = mongoose.Schema({
   type: { type: String, unique: true },
   formId: { type: String },
   placeholder: { type: String },
-  name: { type: String, require: true },
+  name: { type: String, required: true },
   required: { type: Boolean },
 })
 
