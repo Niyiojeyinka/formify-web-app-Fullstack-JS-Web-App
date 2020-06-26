@@ -3,8 +3,10 @@ const uniqueValidator = require('mongoose-unique-validator')
 
 const formSchema = mongoose.Schema({
   title: { type: String, unique: true },
-  predescription: { type: String },
-  postdescription: { type: String },
+  preDescription: { type: String },
+  postDescription: { type: String },
+  userId: { type: String },
+  createdAt: { type: Date, default: Date.now() },
 })
 
 exampleSchema.plugin(uniqueValidator)
